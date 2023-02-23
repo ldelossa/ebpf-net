@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-O2",
+      "-target",
+      "bpf",
+      "-g3",
+      "-c",
+      "-o",
+      "packet_redirect.bpf.o",
+      "packet_redirect.bpf.c"
+    ],
+    "directory": "/home/louis/git/c/ebpf-net/packet_redirection",
+    "file": "/home/louis/git/c/ebpf-net/packet_redirection/packet_redirect.bpf.c",
+    "output": "/home/louis/git/c/ebpf-net/packet_redirection/packet_redirect.bpf.o"
+  }
+]
