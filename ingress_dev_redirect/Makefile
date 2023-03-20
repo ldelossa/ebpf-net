@@ -8,8 +8,8 @@ attach:
 	sudo ip netns exec netns-2 tc filter replace dev veth1@2 ingress prio 1 handle 1 bpf da object-file ingress_dev_redirect.bpf.o section tc
 
 topology-down:
-	-sudo ip -all netns delete
-	-sudo ip link del veth1@1
+	-sudo ip netns delete netns-2
+	-sudo ip netns delete netns-3
 
 topology:
 	make topology-down
